@@ -2,7 +2,7 @@
 
 **Ask questions over your own documents — locally, fast, with measured accuracy.**
 
-Built with ChromaDB · Claude API (Anthropic) · sentence-transformers · FastAPI · Streamlit
+Built with ChromaDB · Groq API (Llama 3.1) · sentence-transformers · FastAPI · Streamlit
 
 ---
 
@@ -83,7 +83,7 @@ rag-doc-qa/
 │   ├── config.py        # Pydantic settings from .env
 │   ├── ingestion.py     # File loading, chunking, ChromaDB upsert
 │   ├── retrieval.py     # Semantic search
-│   ├── generation.py    # Claude API call with prompt caching
+│   ├── generation.py    # Groq API call (Llama 3.1)
 │   └── pipeline.py      # Orchestrates retrieval → generation
 ├── api/
 │   └── main.py          # FastAPI REST endpoints
@@ -119,7 +119,7 @@ pip install pydantic-settings  # for config
 
 # 4. Set your API key
 copy .env.example .env
-# Edit .env and add your ANTHROPIC_API_KEY
+# Edit .env and add your GROQ_API_KEY
 
 # 5. Run tests
 pytest
