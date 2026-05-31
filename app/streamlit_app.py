@@ -67,8 +67,11 @@ def rag_query(question: str, top_k: int = 5) -> dict:
     import time
     from groq import Groq
 
-    # Get API key from st.secrets (cloud) or env (local)
-    api_key = st.secrets.get("GROQ_API_KEY", os.environ.get("GROQ_API_KEY", ""))
+    # Get API key from st.secrets (cloud) or .env (local)
+    try:
+        api_key = st.secrets["GROQ_API_KEY"]
+    except Exception:
+        api_key = os.environ.get("GROQ_API_KEY", "")
     if not api_key:
         return {"answer": "GROQ_API_KEY not set. Add it in Settings > Secrets.", "sources": [], "metadata": {}}
 
