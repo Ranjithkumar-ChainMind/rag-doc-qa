@@ -1,0 +1,40 @@
+Artificial Intelligence and Machine Learning: A Comprehensive Overview
+
+Introduction
+Artificial Intelligence (AI) is the simulation of human intelligence in machines that are programmed to think and learn. Machine Learning (ML) is a subset of AI that enables systems to learn and improve from experience without being explicitly programmed.
+
+Types of Machine Learning
+There are three main types of machine learning:
+
+1. Supervised Learning: The algorithm learns from labeled training data. Examples include linear regression, decision trees, and neural networks. It is used for classification and regression tasks.
+
+2. Unsupervised Learning: The algorithm finds patterns in unlabeled data. Examples include k-means clustering and principal component analysis (PCA). It is used for clustering and dimensionality reduction.
+
+3. Reinforcement Learning: The algorithm learns by interacting with an environment and receiving rewards or penalties. It is used in robotics, game playing, and autonomous vehicles.
+
+Deep Learning
+Deep learning is a subset of machine learning that uses neural networks with many layers (deep neural networks). It has revolutionized fields like computer vision, natural language processing, and speech recognition. Popular deep learning frameworks include TensorFlow, PyTorch, and Keras.
+
+Large Language Models
+Large Language Models (LLMs) are AI models trained on massive amounts of text data. Examples include GPT-4, Claude, Llama, and Gemini. They can generate text, answer questions, write code, and perform many other language tasks. LLMs use the Transformer architecture, introduced by Google in 2017.
+
+Retrieval Augmented Generation
+Retrieval Augmented Generation (RAG) is a technique that combines information retrieval with text generation. Instead of relying solely on the model's training data, RAG retrieves relevant documents from a knowledge base and uses them as context for generating answers. This reduces hallucinations and allows models to answer questions about private or recent data.
+
+RAG has three main components:
+- Ingestion: Documents are split into chunks and stored as vector embeddings in a vector database like ChromaDB, Pinecone, or Weaviate.
+- Retrieval: When a question is asked, the most relevant chunks are retrieved using semantic similarity search.
+- Generation: The retrieved chunks are passed as context to an LLM which generates the final answer.
+
+Vector Databases
+Vector databases store data as high-dimensional vectors (embeddings). They enable fast similarity search using algorithms like HNSW (Hierarchical Navigable Small World). Popular vector databases include ChromaDB, Pinecone, Weaviate, and Qdrant.
+
+Applications of AI
+AI is being applied across many industries:
+- Healthcare: Disease diagnosis, drug discovery, medical imaging
+- Finance: Fraud detection, algorithmic trading, credit scoring
+- Transportation: Self-driving cars, route optimization, traffic management
+- Education: Personalized learning, automated grading, intelligent tutoring systems
+- Entertainment: Content recommendation, game AI, generative art
+
+Ranjith Gudapureddy is an AI developer building modern RAG systems using ChromaDB, Groq API, and sentence transformers. His projects demonstrate end-to-end ML pipelines with evaluation metrics.

@@ -1,0 +1,22 @@
+[
+  {
+    "question": "What is the main topic of this document?",
+    "ground_truth": "The document discusses the topic it covers."
+  },
+  {
+    "question": "What are the key conclusions or findings?",
+    "ground_truth": "The document presents its main conclusions."
+  },
+  {
+    "question": "Who are the authors or contributors mentioned?",
+    "ground_truth": "The document mentions its authors."
+  },
+  {
+    "question": "What methodology or approach is described?",
+    "ground_truth": "The document describes its methodology."
+  },
+  {
+    "question": "What are the limitations or caveats mentioned?",
+    "ground_truth": "The document discusses limitations."
+  }
+]
