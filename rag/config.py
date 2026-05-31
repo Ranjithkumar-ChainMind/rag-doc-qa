@@ -4,6 +4,8 @@ Central config — works in two environments:
 - Streamlit Cloud: reads from st.secrets (set in the Streamlit dashboard)
 """
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 def _get(key: str, default: str = "") -> str:
     """Try st.secrets first (cloud), fall back to env var (local)."""
